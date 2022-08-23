@@ -1,0 +1,172 @@
+* {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #5D5D7D;
+}
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  margin-top: 24px;
+}
+header a {
+  margin: 0 41px 0 57px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 41px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+header a:nth-child(2){
+    opacity: 0.4;
+}
+
+header a:hover{
+    opacity: 0.4;
+}
+
+section {
+  display: inline-block;
+  width: 60%;
+}
+
+aside {
+  display: inline-block;
+  background: rgb(93, 93, 125, 0.16);
+  height: 100vh;
+  width: 40%;
+  position: absolute;
+}
+
+.img-main {
+  position: relative;
+  top: 190px;
+  right: 137px;
+}
+
+h1 {
+  margin: 381px 0 0 136px;
+  width:368px;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 80px;
+  text-transform: capitalize;
+}
+
+p{
+    margin: 15px 0 15px 136px;
+    width: 540px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    opacity: 0.6;
+}
+
+.button-gstart{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: capitalize;
+
+    width: 269px;
+    height: 62px;
+
+    background: #9499EA;
+    border:none;
+    border-radius: 30px;
+    margin-left: 136px;
+    cursor: pointer;
+}
+
+.button-gstart:hover{
+    background: #8f92cc;
+}
+
+.button-gstart:active{
+    background: #b1b3e0;
+}
+
+@media screen and (max-width: 1330px) {
+ 
+    h1, p, .button-gstart{
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1212px) {
+    .img-main{
+        right: auto;
+    }
+}
+
+@media screen and (max-width: 1160px){
+       
+    .img-main{
+        position: static;
+    }
+
+    section{
+        display: block;
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        padding: 80px;
+    } 
+        aside{
+        display: block;
+        height: auto;
+        width: 100%;
+        position: static;
+        padding: 80px;
+    }
+    header{
+        display: none;
+    }
+    h1{
+        margin-top: 0px;
+    }
+
+}
+
+@media screen and (max-width: 675px){
+    section {
+        display: block;
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        padding:0;
+    }
+
+    .button-gstart {
+        width: 269px;
+        margin: auto;
+        display: block;
+    }
+
+    h1{
+        width: auto;
+        text-align: center;
+        margin: 58px 50px 0 50px;
+        font-size: 36px;
+        line-height: 52px;
+    }
+    p{
+        width: auto;
+        text-align: center;
+        margin: 15px 40px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .img-main{
+        max-width: 90%;
+    }
+}
+
